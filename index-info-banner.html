@@ -1,0 +1,717 @@
+<!DOCTYPE html> <html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="keywords" content="">
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="skype-toolbar" content="skype-toolbar-parser-compatible">
+    <link rel="stylesheet" href="css/libs.min.css">
+    <link rel="stylesheet" href="css/style.min.css">
+    <title>Главная</title>
+    <!-- Removing the error about the absence of favicon-->
+    <link rel="shortcut icon" href="data:,">
+</head>
+
+
+<body>
+<section class="info-bar">
+    <div class="info-bar__container">
+        <div class="swiper-container swiper--top">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                    <div class="info-bar__text">
+                        <div class="info-bar__text-item">Бесплатная доставка в&nbsp;пределах МКАД</div>
+                        <div class="info-bar__text-item">За&nbsp;МКАД&nbsp;&mdash; от&nbsp;150&nbsp;₽</div>
+                        <div class="info-bar__text-item">Бесконтактно (первый)</div>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="info-bar__text">
+                        <div class="info-bar__text-item">Бесплатная доставка в&nbsp;пределах МКАД</div>
+                        <div class="info-bar__text-item">За&nbsp;МКАД&nbsp;&mdash; от&nbsp;150&nbsp;₽</div>
+                        <div class="info-bar__text-item">Бесконтактно (второй)</div>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="info-bar__text">
+                        <div class="info-bar__text-item">Бесплатная доставка в&nbsp;пределах МКАД</div>
+                        <div class="info-bar__text-item">За&nbsp;МКАД&nbsp;&mdash; от&nbsp;150&nbsp;₽</div>
+                        <div class="info-bar__text-item">Бесконтактно (третий)</div>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="info-bar__text">
+                        <div class="info-bar__text-item">Бесплатная доставка в&nbsp;пределах МКАД</div>
+                        <div class="info-bar__text-item">За&nbsp;МКАД&nbsp;&mdash; от&nbsp;150&nbsp;₽</div>
+                        <div class="info-bar__text-item">Бесконтактно (четвертый)</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="info-bar__close"></div>
+    </div>
+</section>
+<header class="header">
+    <div class="header__container">
+        <div class="header__col header__col--left">
+            <div class="header__burger"></div>
+            <a class="header__logo" href="/"></a>
+        </div>
+        <div class="header__col header__col--center">
+            <nav class="nav nav--desktop">
+                <a class="nav__item" href="#">Цветы</a>
+                <a class="nav__item" href="#">Подписка</a>
+                <a class="nav__item" href="#">О&nbsp;нас</a>
+                <a class="nav__item" href="#">Доставка</a>
+                <a class="nav__item" href="tel:+79645076282">+7 (964) 507-62-82</a>
+            </nav>
+        </div>
+        <div class="header__col header__col--right">
+            <a class="header__control header__control--phone" href="tel:+79645076282"></a>
+            <a class="header__control header__control--heart" href="#">
+                <div class="header__control-text">1</div>
+            </a>
+            <a class="header__control header__control--cart" href="#">
+                <div class="header__control-text">34</div>
+            </a>
+        </div>
+    </div>
+    <nav class="nav nav--mobile">
+        <div class="nav__btn-close"></div>
+        <a class="nav__item" href="#">Цветы</a>
+        <a class="nav__item" href="#">Подписка</a>
+        <a class="nav__item" href="#">О&nbsp;нас</a>
+        <a class="nav__item" href="#">Доставка</a>
+        <div class="nav__contacts">
+            <div class="nav__contacts-title">Контакты</div>
+            <a class="nav__contacts-link" href="tel:+74994992777">+7 (499) 499-27-77</a>
+        </div>
+    </nav>
+</header>
+
+<div class="basket-mobile basket-mobile--active">
+    <div class="basket-mobile__container">
+        <div class="basket-mobile__time">60 мин.</div>
+        <div class="basket-mobile__title">Корзина</div>
+        <div class="basket-mobile__price">2 750 ₽</div>
+    </div>
+</div>
+
+
+
+    <section class="cover">
+        <div class="cover__container">
+            <div class="cover__col cover__col--left">
+                <div class="cover__title cover__title--desktop">Сервис быстрой
+                    <br>
+                    доставки красивых
+                    <br>
+                    цветов
+                </div>
+                <div class="cover__title cover__title--mobile">Сервис быстрой доставки
+                    <br>
+                    красивых цветов
+                </div>
+                <div class="cover__parameters">
+                    <select class="cover__parameters-item cover__parameters-item--city" id="city" name="city">
+                        <option selected="" value=""></option>
+                        <option value="moskva">Москва</option>
+                        <option value="sankt-peterburg">Санкт-Петербург</option>
+                    </select>
+                    <select class="cover__parameters-item cover__parameters-item--time" id="date" name="date">
+                        <option selected="" value=""></option>
+                        <option value="1655478000">Ближайшее время</option>
+                        <option value="1655481600">19:00 сегодня</option>
+                        <option value="1655485200">20:00 сегодня</option>
+                        <option value="1655488800">21:00 сегодня</option>
+                        <option value="1655492400">22:00 сегодня</option>
+                        <option value="1655496000">23:00 сегодня</option>
+                        <option value="1655499600">Завтра</option>
+                    </select>
+                </div>
+                <a class="cover__rating-link" href="#">
+                    <img class="cover__rating-img" src="img/cover/2.webp">
+                </a>
+            </div>
+            <div class="cover__col cover__col--right">
+                <div class="swiper">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <img class="cover__img" src="img/cover/1.webp">
+                        </div>
+                        <div class="swiper-slide">
+                            <img class="cover__img" src="img/cover/1.webp">
+                        </div>
+                        <div class="swiper-slide">
+                            <img class="cover__img" src="img/cover/1.webp">
+                        </div>
+                    </div>
+                    <div class="swiper-pagination"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="filters">
+        <div class="filters__container">
+            <div class="filters__col filters__col--left">
+                <div class="filters__item filters__item--search filters__item--disable"></div>
+                <div class="filters__item filters__item--sort"></div>
+                <a class="filters__item" href="#">Новые букеты</a>
+                <a class="filters__item filters__item--active" href="#">Букеты месяца</a>
+                <a class="filters__item" href="#">Букеты месяца</a>
+                <a class="filters__item" href="#">Букеты месяца</a>
+                <a class="filters__item" href="#">Букеты месяца</a>
+                <a class="filters__item" href="#">Букеты месяца</a>
+                <form class="filters__sort">
+                    <div class="filters__btn-close"></div>
+                    <div class="filters__sort-title">Сортировка</div>
+                    <div class="filters__sort-list">
+                        <div class="filters__sort-item">
+                            <input class="filters__sort-checkbox" type="checkbox" id="new" name="new" value="1">
+                            <label class="filters__sort-text" for="new">Новые</label>
+                        </div>
+                        <div class="filters__sort-item">
+                            <input class="filters__sort-checkbox" type="checkbox" id="cheap" name="cheap" value="2">
+                            <label class="filters__sort-text" for="cheap">Дешевые</label>
+                        </div>
+                        <div class="filters__sort-item">
+                            <input class="filters__sort-checkbox" type="checkbox" id="expensive" name="expensive" value="3">
+                            <label class="filters__sort-text" for="expensive">Дорогие</label>
+                        </div>
+                    </div>
+                    <button class="filters__sort-btn" type="submit">Готово</button>
+                </form>
+                <div class="filters__overlay"></div>
+            </div>
+            <div class="filters__col filters__col--right">
+                <div class="filters__data filters__data--city">
+                    <div class="filters__data-text">Куда</div>
+                </div>
+                <div class="filters__data filters__data--time">
+                    <div class="filters__data-text">Когда</div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="catalog">
+        <div class="catalog__container">
+            <div class="catalog__row">
+                <div class="catalog__title">Самое популярное</div>
+            </div>
+            <div class="catalog__row">
+                <div class="catalog__list">
+                    <div class="product-card">
+                        <div class="product-card__row product-card__row--top">
+                            <button class="product-card__favorite"></button>
+                            <a class="product-card__img-link" href="#">
+                                <img class="product-card__img" src="img/product/1.webp">
+                            </a>
+                        </div>
+                        <div class="product-card__row product-card__row--middle">
+                            <a class="product-card__title" href="#">Chàmomile</a>
+                            <div class="product-card__price">2 990 ₽</div>
+                        </div>
+                        <div class="product-card__row product-card__row--bottom">
+                            <a class="product-card__btn" href="#">
+                                <span class="product-card__text">Заказать</span>
+                                <span class="product-card__time">60 мин.</span>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="product-card">
+                        <div class="product-card__row product-card__row--top">
+                            <button class="product-card__favorite product-card__favorite--active"></button>
+                            <a class="product-card__img-link" href="#">
+                                <img class="product-card__img" src="img/product/1.webp">
+                            </a>
+                        </div>
+                        <div class="product-card__row product-card__row--middle">
+                            <a class="product-card__title" href="#">Chàmomile</a>
+                            <div class="product-card__price">2 990 ₽</div>
+                        </div>
+                        <div class="product-card__row product-card__row--bottom">
+                            <a class="product-card__btn" href="#">
+                                <span class="product-card__text">Заказать</span>
+                                <span class="product-card__time">60 мин.</span>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="product-card">
+                        <div class="product-card__row product-card__row--top">
+                            <button class="product-card__favorite"></button>
+                            <a class="product-card__img-link" href="#">
+                                <img class="product-card__img" src="img/product/1.webp">
+                            </a>
+                        </div>
+                        <div class="product-card__row product-card__row--middle">
+                            <a class="product-card__title" href="#">Chàmomile</a>
+                            <div class="product-card__price">2 990 ₽</div>
+                        </div>
+                        <div class="product-card__row product-card__row--bottom">
+                            <a class="product-card__btn" href="#">
+                                <span class="product-card__text">Заказать</span>
+                                <span class="product-card__time">60 мин.</span>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="product-card">
+                        <div class="product-card__row product-card__row--top">
+                            <div class="product-card__label">
+                                <div class="product-card__label-item product-card__label-item--bg-red">Сезон</div>
+                                <div class="product-card__label-item product-card__label-item--bg-red-transparent">
+                                    Ароматные
+                                </div>
+                            </div>
+                            <button class="product-card__favorite"></button>
+                            <a class="product-card__img-link" href="#">
+                                <img class="product-card__img" src="img/product/1.webp">
+                            </a>
+                        </div>
+                        <div class="product-card__row product-card__row--middle">
+                            <a class="product-card__title" href="#">Chàmomile</a>
+                            <div class="product-card__price">2 990 ₽</div>
+                        </div>
+                        <div class="product-card__row product-card__row--bottom">
+                            <a class="product-card__btn" href="#">
+                                <span class="product-card__text">Заказать</span>
+                                <span class="product-card__time">60 мин.</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="how-it-works">
+        <div class="how-it-works__container">
+            <div class="how-it-works__title">Как это работает?</div>
+        </div>
+        <div class="how-it-works__container how-it-works__container--cols">
+            <div class="how-it-works__item how-it-works__item--bg">
+                <img class="how-it-works__img" src="img/how-it-works/1.webp">
+                <div class="how-it-works__item-title">Наш сайт&nbsp;&mdash; это витрина</div>
+                <div class="how-it-works__item-text">Как только вы&nbsp;сделали заказ, флорист идет выбирать свежие
+                    цветы, специально под ваш букет. Если каких-то цветов не&nbsp;будет или увидем проблемы с&nbsp;качетсвом&nbsp;&mdash;
+                    предложим классную замену
+                </div>
+            </div>
+            <div class="how-it-works__item how-it-works__item--blue">
+                <img class="how-it-works__img" src="img/how-it-works/2.webp">
+                <div class="how-it-works__item-title">Мы&nbsp;сервис, не&nbsp;салон цветов</div>
+                <div class="how-it-works__item-text">Мы&nbsp;не&nbsp;выкупаем и&nbsp;храним цветы. Как только вы&nbsp;сделали
+                    заказ&nbsp;&mdash; закупщик идет выбирать цветы именно для вас.
+                </div>
+            </div>
+            <div class="how-it-works__item">
+                <img class="how-it-works__img" src="img/how-it-works/3.webp">
+                <div class="how-it-works__item-title">Специальные курьеры</div>
+                <div class="how-it-works__item-text">Мы&nbsp;работаем со&nbsp;своим штатом курьеров и&nbsp;постоянно
+                    обучаем их&nbsp;&mdash; они умеют доставить комплимент
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="catalog">
+        <div class="catalog__container">
+            <div class="catalog__row">
+                <div class="catalog__title">Ranùnculus</div>
+                <div class="catalog__descr">Азиатские лютики&nbsp;&mdash; воздушные, оригинальные и изысканные</div>
+            </div>
+            <div class="catalog__row catalog__row--indent-bottom-none">
+                <div class="catalog__list">
+                    <div class="product-card">
+                        <div class="product-card__row product-card__row--top">
+                            <button class="product-card__favorite"></button>
+                            <a class="product-card__img-link" href="#">
+                                <img class="product-card__img" src="img/product/1.webp">
+                            </a>
+                        </div>
+                        <div class="product-card__row product-card__row--middle">
+                            <aa class="product-card__title" href="#">Chàmomile</aa>
+                            <div class="product-card__price">2 990 ₽</div>
+                        </div>
+                        <div class="product-card__row product-card__row--bottom">
+                            <a class="product-card__btn" href="#">
+                                <span class="product-card__text">Заказать</span>
+                                <span class="product-card__time">60 мин.</span>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="product-card">
+                        <div class="product-card__row product-card__row--top">
+                            <button class="product-card__favorite product-card__favorite--active"></button>
+                            <a class="product-card__img-link" href="#">
+                                <img class="product-card__img" src="img/product/1.webp">
+                            </a>
+                        </div>
+                        <div class="product-card__row product-card__row--middle">
+                            <a class="product-card__title" href="#">Chàmomile</a>
+                            <div class="product-card__price">2 990 ₽</div>
+                        </div>
+                        <div class="product-card__row product-card__row--bottom">
+                            <a class="product-card__btn" href="#">
+                                <span class="product-card__text">Заказать</span>
+                                <span class="product-card__time">60 мин.</span>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="product-card">
+                        <div class="product-card__row product-card__row--top">
+                            <button class="product-card__favorite"></button>
+                            <a class="product-card__img-link" href="#">
+                                <img class="product-card__img" src="img/product/1.webp">
+                            </a>
+                        </div>
+                        <div class="product-card__row product-card__row--middle">
+                            <a class="product-card__title" href="#">Chàmomile</a>
+                            <div class="product-card__price">2 990 ₽</div>
+                        </div>
+                        <div class="product-card__row product-card__row--bottom">
+                            <a class="product-card__btn" href="#">
+                                <span class="product-card__text">Заказать</span>
+                                <span class="product-card__time">60 мин.</span>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="product-card">
+                        <div class="product-card__row product-card__row--top">
+                            <div class="product-card__label">
+                                <div class="product-card__label-item product-card__label-item--bg-red">Сезон</div>
+                                <div class="product-card__label-item product-card__label-item--bg-red-transparent">
+                                    Ароматные
+                                </div>
+                            </div>
+                            <button class="product-card__favorite"></button>
+                            <a class="product-card__img-link" href="#">
+                                <img class="product-card__img" src="img/product/1.webp">
+                            </a>
+                        </div>
+                        <div class="product-card__row product-card__row--middle">
+                            <a class="product-card__title" href="#">Chàmomile</a>
+                            <div class="product-card__price">2 990 ₽</div>
+                        </div>
+                        <div class="product-card__row product-card__row--bottom">
+                            <a class="product-card__btn" href="#">
+                                <span class="product-card__text">Заказать</span>
+                                <span class="product-card__time">60 мин.</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="catalog__row">
+                <a class="catalog__btn" href="#">еще 56 букетов</a>
+            </div>
+        </div>
+    </section>
+    <section class="catalog">
+        <div class="catalog__container">
+            <div class="catalog__row">
+                <div class="catalog__title">Urban Jungle</div>
+                <div class="catalog__descr">Собираем самые интересные сезонные цветы в букеты и продаем по
+                    специальной цене
+                </div>
+            </div>
+            <div class="catalog__row">
+                <div class="catalog__list">
+                    <div class="product-card product-card--full-width">
+                        <a class="product-card__title" href="#">Розовые розы</a>
+                        <div class="product-card__descr">Прямиком из лесного питомника — пушистая датская ель,
+                            ростом примерно 2,4м.
+                        </div>
+                        <div class="product-card__price">2 990 ₽</div>
+                        <a class="product-card__btn" href="#">
+                            <span class="product-card__text">Заказать</span>
+                            <span class="product-card__time">60 мин.</span>
+                        </a>
+                        <div class="product-card__pin"></div>
+                        <a class="product-card__img-link" href="#">
+                            <picture class="product-card__img">
+                                <source srcset="img/product/3.webp" media="(max-width: 768px)">
+                                <img src="img/product/2.webp" alt="">
+                            </picture>
+                        </a>
+                    </div>
+                </div>
+                <div class="catalog__list">
+                    <div class="product-card">
+                        <div class="product-card__row product-card__row--top">
+                            <button class="product-card__favorite"></button>
+                            <a class="product-card__img-link" href="#">
+                                <img class="product-card__img" src="img/product/1.webp">
+                            </a>
+                        </div>
+                        <div class="product-card__row product-card__row--middle">
+                            <a class="product-card__title" href="#">Chàmomile</a>
+                            <div class="product-card__price">2 990 ₽</div>
+                        </div>
+                        <div class="product-card__row product-card__row--bottom">
+                            <a class="product-card__btn" href="#">
+                                <span class="product-card__text">Заказать</span>
+                                <span class="product-card__time">60 мин.</span>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="product-card">
+                        <div class="product-card__row product-card__row--top">
+                            <button class="product-card__favorite product-card__favorite--active"></button>
+                            <a class="product-card__img-link" href="#">
+                                <img class="product-card__img" src="img/product/1.webp">
+                            </a>
+                        </div>
+                        <div class="product-card__row product-card__row--middle">
+                            <a class="product-card__title" href="#">Chàmomile</a>
+                            <div class="product-card__price">2 990 ₽</div>
+                        </div>
+                        <div class="product-card__row product-card__row--bottom">
+                            <a class="product-card__btn" href="#">
+                                <span class="product-card__text">Заказать</span>
+                                <span class="product-card__time">60 мин.</span>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="product-card">
+                        <div class="product-card__row product-card__row--top">
+                            <button class="product-card__favorite"></button>
+                            <a class="product-card__img-link" href="#">
+                                <img class="product-card__img" src="img/product/1.webp">
+                            </a>
+                        </div>
+                        <div class="product-card__row product-card__row--middle">
+                            <a class="product-card__title" href="#">Chàmomile</a>
+                            <div class="product-card__price">2 990 ₽</div>
+                        </div>
+                        <div class="product-card__row product-card__row--bottom">
+                            <a class="product-card__btn" href="#">
+                                <span class="product-card__text">Заказать</span>
+                                <span class="product-card__time">60 мин.</span>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="product-card">
+                        <div class="product-card__row product-card__row--top">
+                            <div class="product-card__label">
+                                <div class="product-card__label-item product-card__label-item--bg-red">Сезон</div>
+                                <div class="product-card__label-item product-card__label-item--bg-red-transparent">
+                                    Ароматные
+                                </div>
+                            </div>
+                            <button class="product-card__favorite"></button>
+                            <a class="product-card__img-link" href="#">
+                                <img class="product-card__img" src="img/product/1.webp">
+                            </a>
+                        </div>
+                        <div class="product-card__row product-card__row--middle">
+                            <a class="product-card__title" href="#">Chàmomile</a>
+                            <div class="product-card__price">2 990 ₽</div>
+                        </div>
+                        <div class="product-card__row product-card__row--bottom">
+                            <a class="product-card__btn" href="#">
+                                <span class="product-card__text">Заказать</span>
+                                <span class="product-card__time">60 мин.</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="chat">
+        <div class="chat__container">
+            <div class="swiper">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <div class="chat__item">
+                            <div class="chat__col chat__col--left">
+                                <img class="chat__img" src="img/chat/1.webp">
+                            </div>
+                            <div class="chat__col chat__col--right">
+                                <div class="chat__title">Удобный чат с&nbsp;флористом</div>
+                                <div class="chat__text">Порекомендуем лучшие сезонные цветы, пришлем фото всех
+                                    растений, которые есть на&nbsp;базе, сфотографируем готовый букет и&nbsp;подписанную
+                                    открытку перед отправкой, добавим или заменим упаковку и&nbsp;цветы по&nbsp;вашей
+                                    просьбе. И&nbsp;всё это&nbsp;&mdash; в&nbsp;удобном чате!
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="chat__item">
+                            <div class="chat__col chat__col--left">
+                                <img class="chat__img" src="img/chat/1.webp">
+                            </div>
+                            <div class="chat__col chat__col--right">
+                                <div class="chat__title">Удобный чат с&nbsp;флористом</div>
+                                <div class="chat__text">Порекомендуем лучшие сезонные цветы, пришлем фото всех
+                                    растений, которые есть на&nbsp;базе, сфотографируем готовый букет и&nbsp;подписанную
+                                    открытку перед отправкой, добавим или заменим упаковку и&nbsp;цветы по&nbsp;вашей
+                                    просьбе. И&nbsp;всё это&nbsp;&mdash; в&nbsp;удобном чате!
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="chat__item">
+                            <div class="chat__col chat__col--left">
+                                <img class="chat__img" src="img/chat/1.webp">
+                            </div>
+                            <div class="chat__col chat__col--right">
+                                <div class="chat__title">Удобный чат с&nbsp;флористом</div>
+                                <div class="chat__text">Порекомендуем лучшие сезонные цветы, пришлем фото всех
+                                    растений, которые есть на&nbsp;базе, сфотографируем готовый букет и&nbsp;подписанную
+                                    открытку перед отправкой, добавим или заменим упаковку и&nbsp;цветы по&nbsp;вашей
+                                    просьбе. И&nbsp;всё это&nbsp;&mdash; в&nbsp;удобном чате!
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-pagination"></div>
+            </div>
+        </div>
+    </section>
+    <section class="reviews">
+        <div class="reviews__container">
+            <div class="reviews__title">Отзывы</div>
+        </div>
+        <div class="reviews__container reviews__container--swiper">
+            <div class="swiper">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <a class="reviews__item" href="#">
+                            <div class="reviews__rating"></div>
+                            <div class="reviews__text">Приехали вовремя, позвонили заранее. Получила цветы в&nbsp;идеальном
+                                состоянии. Платила картой. Ко&nbsp;мне оба раза приезжали поздно&nbsp;&mdash; с&nbsp;22&nbsp;до&nbsp;23.
+                                Это очень удобно, если приходишь домой поздно. Отличный сервис! Никаких замечаний!
+                            </div>
+                            <div class="reviews__author">
+                                <picture class="reviews__author-img">
+                                    <source srcset="img/reviews/2.webp" media="(max-width: 768px)">
+                                    <img src="img/reviews/1.webp" alt="MDN">
+                                </picture>
+                                <div class="reviews__author-title">Елена Ларина
+                                    <span class="reviews__author-text">Маркетолог</span>
+                                </div>
+                                <div class="reviews__author-icon reviews__author-icon--facebook"></div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="swiper-slide">
+                        <a class="reviews__item" href="#">
+                            <div class="reviews__rating"></div>
+                            <div class="reviews__text">Приехали вовремя, позвонили заранее. Получила цветы в&nbsp;идеальном
+                                состоянии. Платила картой. Ко&nbsp;мне оба раза приезжали поздно&nbsp;&mdash; с&nbsp;22&nbsp;до&nbsp;23.
+                                Это очень удобно, если приходишь домой поздно. Отличный сервис! Никаких замечаний!
+                            </div>
+                            <div class="reviews__author">
+                                <picture class="reviews__author-img">
+                                    <source srcset="img/reviews/2.webp" media="(max-width: 768px)">
+                                    <img src="img/reviews/1.webp" alt="MDN">
+                                </picture>
+                                <div class="reviews__author-title">Елена Ларина
+                                    <span class="reviews__author-text">Маркетолог</span>
+                                </div>
+                                <div class="reviews__author-icon reviews__author-icon--facebook"></div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="swiper-slide">
+                        <a class="reviews__item" href="#">
+                            <div class="reviews__rating"></div>
+                            <div class="reviews__text">Приехали вовремя, позвонили заранее. Получила цветы в&nbsp;идеальном
+                                состоянии. Платила картой. Ко&nbsp;мне оба раза приезжали поздно&nbsp;&mdash; с&nbsp;22&nbsp;до&nbsp;23.
+                                Это очень удобно, если приходишь домой поздно. Отличный сервис! Никаких замечаний!
+                            </div>
+                            <div class="reviews__author">
+                                <picture class="reviews__author-img">
+                                    <source srcset="img/reviews/2.webp" media="(max-width: 768px)">
+                                    <img src="img/reviews/1.webp" alt="MDN">
+                                </picture>
+                                <div class="reviews__author-title">Елена Ларина
+                                    <span class="reviews__author-text">Маркетолог</span>
+                                </div>
+                                <div class="reviews__author-icon reviews__author-icon--facebook"></div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="swiper-controls">
+                <div class="reviews__button reviews__button--prev"></div>
+                <div class="reviews__button reviews__button--next"></div>
+            </div>
+            <div class="swiper-pagination"></div>
+        </div>
+    </section>
+    <section class="subscription">
+        <div class="subscription__container">
+            <div class="subscription__title">Подписка на&nbsp;цветы</div>
+            <picture class="subscription__img">
+                <source srcset="img/subscription/2.webp" media="(max-width: 768px)">
+                <img src="img/subscription/1.webp" alt="">
+            </picture>
+            <div class="subscription__descr">Подписка на&nbsp;цветы&nbsp;&mdash; это удобно. получайте свежие цветы
+                каждую неделю
+                <br>
+                от&nbsp;15&nbsp;000 руб в&nbsp;месяц.
+            </div>
+            <a class="subscription__btn" href="#">Узнать больше</a>
+        </div>
+    </section>
+    <section class="about-us">
+        <div class="about-us__container">
+            <div class="about-us__title">О&nbsp;нас пишут</div>
+            <div class="about-us__list">
+                <div class="about-us__item">
+                    <img class="about-us__img" src="img/about-us/1.webp">
+                </div>
+                <div class="about-us__item">
+                    <img class="about-us__img" src="img/about-us/2.webp">
+                </div>
+                <div class="about-us__item">
+                    <img class="about-us__img" src="img/about-us/3.webp">
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="info-banner info-banner--icon-clock info-banner--active">
+            <div class="info-banner__container">
+                <div class="info-banner__title">Мы&nbsp;временно не&nbsp;принимаем заказы</div>
+                <div class="info-banner__text">Вы&nbsp;можете оформить заказ на&nbsp;другой день.
+                    <br>
+                    Срочную доставку возобновим в&nbsp;течение пары часов.
+                </div>
+                <div class="info-banner__btn">Закрыть</div>
+                <div class="info-banner__close"></div>
+            </div>
+            <div class="info-banner__overlay"></div>
+        </section>
+    <footer class="footer">
+    <div class="footer__container">
+        <div class="footer__col footer__col--left">
+            <a class="footer__text footer__text--link" href="#">Контактная информация</a>
+            <div class="footer__text">&copy;2018&nbsp;Germen. Использование материалов сайта возможно только при
+                наличии активной ссылки на&nbsp;первоисточник.
+            </div>
+        </div>
+        <div class="footer__col footer__col--right">
+            <a class="footer__link footer__link--facebook" href="#"></a>
+            <a class="footer__link footer__link--instagram" href="#"></a>
+        </div>
+    </div>
+</footer>
+<div class="preloader">
+    <div class="preloader__status"></div>
+</div>
+
+
+    <script src="js/libs.min.js"></script>
+<script src="js/app-project-base.js"></script>
+<script src="js/app-project-run.js"></script>
+<script src="js/main.min.js"></script>
+
+</body>
+
+</html>
