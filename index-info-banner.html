@@ -7,7 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1">
     <meta name="format-detection" content="telephone=no">
     <meta name="skype-toolbar" content="skype-toolbar-parser-compatible">
-    <link rel="stylesheet" href="css/libs.min.css">
+    <link rel="stylesheet" href="css/intlTelInput.min.css">
     <link rel="stylesheet" href="css/style.min.css">
     <title>Главная</title>
     <!-- Removing the error about the absence of favicon-->
@@ -69,7 +69,44 @@
             </nav>
         </div>
         <div class="header__col header__col--right">
-            <a class="header__control header__control--phone" href="tel:+79645076282"></a>
+<!--            <a class="header__control header__control&#45;&#45;phone" href="tel:+79645076282"></a>-->
+            <button class="header__lk">
+                <svg width="27" height="30" viewBox="0 0 27 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M26 29.125V26C26 24.3424 25.3415 22.7527 24.1694 21.5806C22.9973 20.4085 21.4076 19.75 19.75 19.75H7.25C5.5924 19.75 4.00268 20.4085 2.83058 21.5806C1.65848 22.7527 1 24.3424 1 26V29.125" stroke="#090A0A" stroke-width="1.6129" stroke-linecap="round" stroke-linejoin="round"/>
+                    <path d="M13.5 13.5C16.9518 13.5 19.75 10.7018 19.75 7.25C19.75 3.79822 16.9518 1 13.5 1C10.0482 1 7.25 3.79822 7.25 7.25C7.25 10.7018 10.0482 13.5 13.5 13.5Z" stroke="#090A0A" stroke-width="1.6129" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+            </button>
+            
+            
+            <div class="lk-modal lk-modal2">
+                <div class="lk-modal__inner">
+                    <button class="lk-modal__back">Назад</button>
+                    <button class="lk-modal__close">
+                        <svg width="20" height="19" viewBox="0 0 20 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <line x1="2.41421" y1="1" x2="19" y2="17.5858" stroke="#25272E" stroke-width="2" stroke-linecap="round"/>
+                            <line x1="1" y1="-1" x2="24.4558" y2="-1" transform="matrix(-0.707107 0.707107 0.707107 0.707107 19.7951 1)" stroke="#25272E" stroke-width="2" stroke-linecap="round"/>
+                        </svg>
+                    </button>
+                    <div class="lk-modal__title">Введите код</div>
+                    <div class="lk-modal__desc">
+                        Мы отправили вам проверочный <br>  код на номер: <br>
+                        +7 906 099 59 55
+                    </div>
+                    <div class="lk-modal__sms fieldset">
+                        <label class="box"><input class="field" type="text" placeholder="•" /></label>
+                        <label class="box"><input class="field" type="text" placeholder="•" /></label>
+                        <label class="box"><input class="field" type="text" placeholder="•" /></label>
+                        <label class="box"><input class="field" type="text" placeholder="•" /></label>
+                    </div>
+                    <button class="lk-modal__more">Отправить код еще раз (5)</button>
+                    <button class="lk-modal__btn mbtn mbtn-gray">Изменить номер телефона</button>
+                    <div class="lk-modal__hint2">
+                        Вводя номер телефона вы соглашаетесь с нашей <a href="">Политикой Конфидициальности</a>
+                    </div>
+                </div>
+            </div>
+            
+            
             <a class="header__control header__control--heart" href="#">
                 <div class="header__control-text">1</div>
             </a>
@@ -707,9 +744,9 @@
 </div>
 
 
-    <script src="js/libs.min.js"></script>
-<script src="js/app-project-base.js"></script>
+    <script src="js/app-project-base.js"></script>
 <script src="js/app-project-run.js"></script>
+<script src="js/intlTelInput-jquery.js"></script>
 <script src="js/main.min.js"></script>
 
 </body>
