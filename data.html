@@ -9,7 +9,7 @@
     <meta name="skype-toolbar" content="skype-toolbar-parser-compatible">
     <link rel="stylesheet" href="css/intlTelInput.min.css">
     <link rel="stylesheet" href="css/style.min.css">
-    <title>Адреса</title>
+    <title>Данные</title>
     <!-- Removing the error about the absence of favicon-->
     <link rel="shortcut icon" href="data:,">
 </head>
@@ -141,107 +141,51 @@
 
 
 
-    <section class="cabinet address">
+    <section class="cabinet user-data">
         <div class="container">
-            <div class="cabinet__title display1">Адреса</div>
+            <div class="cabinet__nav">
+                <a href="" class="cabinet__back">
+                    <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M10 12L6 8L10 4" stroke="#64748B" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                </a>
+                <a href="" class="cabinet__close">
+                    <svg width="18" height="17" viewBox="0 0 18 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <line x1="2.41421" y1="1" x2="17" y2="15.5858" stroke="#64748B" stroke-width="2" stroke-linecap="round"/>
+                        <line x1="1" y1="-1" x2="21.6274" y2="-1" transform="matrix(-0.707107 0.707107 0.707107 0.707107 17.7068 1)" stroke="#64748B" stroke-width="2" stroke-linecap="round"/>
+                    </svg>
+                </a>
+            </div>
+            <div class="cabinet__title display1">Данные</div>
             <div class="cabinet__inner">
                 <div class="cabinet__left">
-                    <div
-        class="address-card address-card--new"
-        data-desc="Добавить новый адрес"
-        data-street=""
-        data-office=""
-        data-intercom=""
-        data-floor=""
-        data-entrance=""
-        data-comment=""
->
-    <div class="address-card__top">
-        <div class="address-card__title display4">Новый</div>
-        <svg width="10" height="17" viewBox="0 0 10 17" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <path d="M2 15L8.5 8.5L2 2" stroke="#090A0A" stroke-width="2.37254" stroke-linecap="round" stroke-linejoin="round"/>
-        </svg>
-    </div>
-    <div class="address-card__desc">Добавить новый адрес</div>
-</div>
-
-                    <div
-        class="address-card "
-        data-desc="Зои и Александра космодемьянских, 35/1"
-        data-street="Зои и Александра космодемьянских, 35/1"
-        data-office="94"
-        data-intercom="6543#0629"
-        data-floor="7"
-        data-entrance="3"
-        data-comment="Подьезд со стороны улицы, между “донером” и “ароматным миром”, вот вторую дверь не звонить"
->
-    <div class="address-card__top">
-        <div class="address-card__title display4">Адрес 1</div>
-        <svg width="10" height="17" viewBox="0 0 10 17" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <path d="M2 15L8.5 8.5L2 2" stroke="#090A0A" stroke-width="2.37254" stroke-linecap="round" stroke-linejoin="round"/>
-        </svg>
-    </div>
-    <div class="address-card__desc">Зои и Александра космодемьянских, 35/1</div>
-</div>
-
-                    <div
-        class="address-card "
-        data-desc="Молочный переулок 4"
-        data-street="Молочный переулок 4"
-        data-office="123"
-        data-intercom="2543#0629"
-        data-floor="9"
-        data-entrance="1"
-        data-comment=""
->
-    <div class="address-card__top">
-        <div class="address-card__title display4">Адрес 2</div>
-        <svg width="10" height="17" viewBox="0 0 10 17" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <path d="M2 15L8.5 8.5L2 2" stroke="#090A0A" stroke-width="2.37254" stroke-linecap="round" stroke-linejoin="round"/>
-        </svg>
-    </div>
-    <div class="address-card__desc">Молочный переулок 4</div>
-</div>
-
+                    <div class="data-card">
+                        <div class="data-card__name">Антон</div>
+                        <div class="data-card__desc">+7 906 089 59 63</div>
+                        <div class="data-card__desc">anurovanton@gmail.com</div>
+                    </div>
                 </div>
                 <div class="cabinet__right">
-                    <form action="" class="address-form">
-                        <div class="address-form__inner">
-                            <div class="address-form__title display4">Адрес:</div>
-                            <div class="address-form__desc _desc">Добавить новый адрес</div>
-                            <div class="address-form__map">
-                                <img src="img/map.webp" alt="">
-                            </div>
-                            <div class="address-form__grid">
-                                <fieldset class="address-form__full fg">
-                                    <label>Адрес</label>
-                                    <input class="_street" type="text">
-                                </fieldset>
-                                <fieldset class="address-form__field fg">
-                                    <label>кв/офис</label>
-                                    <input class="_office" type="text">
-                                </fieldset>
-                                <fieldset class="address-form__field fg">
-                                    <label>домофон</label>
-                                    <input class="_intercom" type="text">
-                                </fieldset>
-                                <fieldset class="address-form__field fg">
-                                    <label>этаж</label>
-                                    <input class="_floor" type="text">
-                                </fieldset>
-                                <fieldset class="address-form__field fg">
-                                    <label>подъезд</label>
-                                    <input class="_entrance" type="text">
-                                </fieldset>
-                                <fieldset class="address-form__full fg">
-                                    <label>Комментарий</label>
-                                    <textarea class="_comment"></textarea>
-                                </fieldset>
-                            </div>
-                            <div class="address-form__buttons">
-                                <button class="address-form__btn mbtn mbtn-gray">Удалить</button>
-                                <button class="_save-address address-form__btn mbtn mbtn-accent">Cохранить</button>
-                            </div>
+                    <form action="" class="data-form shadow-block">
+                        <div class="order-form__top">
+                            <div class="order-form__title display4">Данные</div>
+                        </div>
+
+                        <fieldset class="address-form__full fg">
+                            <label>Имя:</label>
+                            <input value="Антон" type="text">
+                        </fieldset>
+                        <fieldset class="address-form__full fg">
+                            <label>Телефон:</label>
+                            <input value="+7 906 089 59 63" type="text">
+                        </fieldset>
+                        <fieldset class="address-form__full fg">
+                            <label>Почта</label>
+                            <input value="ant.anurov@gmail.com" type="email">
+                        </fieldset>
+
+                        <div class="address-form__buttons">
+                            <button class="_save-address address-form__btn mbtn mbtn-accent">Cохранить</button>
                         </div>
                     </form>
                 </div>
